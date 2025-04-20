@@ -15,4 +15,4 @@ Special thanks to:
 
 ### 1.0.0
 
-Initial release of the extension.
+Initial release of the extension. This is still in development so do not consider this stable yet.

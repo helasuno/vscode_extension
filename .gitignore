@@ -1,0 +1,5 @@
+# Tools
+*.vsix
+
+# Junk macOS files
+.DS_Store
