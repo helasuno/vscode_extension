@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Helasuno",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.line.helasuno",
+			"begin": "[0-9]+ -",
+			"end": "\\n"
+		},
+		"comments_old": {
+			"patterns": [
+				{
+					"name": "comment.line.helasuno",
+					"match": "[0-9]+ - [A-Za-z]+ \"(?:[^\"]|\"\")*\""
+				},
+				{
+					"name": "comment.line.helasuno",
+					"match": "[0-9]+ - ([A-Za-z0-9]+( [A-Za-z0-9]+)+)"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.helasuno",
+					"match": "\\b(end|get|jump|pause|set|write|writeln)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"match": "[0-9]+",
+					"name": "constant.numeric.helasuno"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.helasuno",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.helasuno",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.helasuno"
+}

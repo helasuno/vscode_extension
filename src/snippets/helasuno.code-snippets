@@ -1,0 +1,42 @@
+{
+    "Comment": {
+        "prefix": "co",
+        "body": ["$TM_LINE_NUMBER - $0"],
+        "description": "Insert a comment."
+    },
+    "End": {
+        "prefix": "end",
+        "body": ["$TM_LINE_NUMBER end"],
+        "description": "End the script."
+    },
+    "Get": {
+        "prefix": "ge",
+        "body": ["$TM_LINE_NUMBER get $1 = \"$0\""],
+        "description": "Set a variable by way of user input."
+    },
+    "Jump": {
+        "prefix": "ju",
+        "body": ["$TM_LINE_NUMBER jump $0"],
+        "description": "Jump to a different line in the script."
+    },
+    "Pause": {
+        "prefix": "pa",
+        "body": ["$TM_LINE_NUMBER pause \"$0\""],
+        "description": "Pause the execution of the script for a number of seconds."
+    },
+    "Set": {
+        "prefix": "se",
+        "body": ["$TM_LINE_NUMBER set $1 = \"$0\""],
+        "description": "Set a variable."
+    },
+    "Write": {
+        "prefix": "wr",
+        "body": ["$TM_LINE_NUMBER write \"$0\""],
+        "description": "Write text to the console."
+    },
+    "Writeln": {
+        "prefix": "wl",
+        "body": ["$TM_LINE_NUMBER writeln \"$0\""],
+        "description": "Write a line of text to the console."
+    }
+}
