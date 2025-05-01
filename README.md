@@ -9,6 +9,10 @@ Run the following:
     vsce package --allow-missing-repository
 	mv helasuno*.vsix ../dist/
 
+If vsce isn't installed, get it:
+
+    npm install -g @vscode/vsce
+
 ### Installing the Extension
 In Visual Studio Code:
 
