@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#statmods"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -18,18 +21,26 @@
 	"repository": {
 		"comments": {
 			"name": "comment.line.helasuno",
-			"begin": "[0-9]+ -",
+			"begin": "[0-9]+ -[^>]",
 			"end": "\\n"
+		},
+		"statmods": {
+			"patterns": [
+				{
+					"name": "support.type.helasuno",
+					"match": "\\b(blue|countdown|green|lower|magenta|red|upper|yellow)\\b"
+				}
+			]
 		},
 		"comments_old": {
 			"patterns": [
 				{
 					"name": "comment.line.helasuno",
-					"match": "[0-9]+ - [A-Za-z]+ \"(?:[^\"]|\"\")*\""
+					"match": "[0-9]+ -[^>] [A-Za-z]+ \"(?:[^\"]|\"\")*\""
 				},
 				{
 					"name": "comment.line.helasuno",
-					"match": "[0-9]+ - ([A-Za-z0-9]+( [A-Za-z0-9]+)+)"
+					"match": "[0-9]+ -[^>] ([A-Za-z0-9]+( [A-Za-z0-9]+)+)"
 				}
 			]
 		},
